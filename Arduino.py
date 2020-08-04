@@ -3,6 +3,7 @@ import glob
 import serial
 from time import sleep
 
+
 class Arduino(object):
     port = None
     connection = None
