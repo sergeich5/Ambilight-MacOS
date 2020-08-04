@@ -4,6 +4,7 @@ import struct
 import Quartz.CoreGraphics as CG
 from AppKit import NSScreen
 
+
 class ScreenPixel(object):
     def __init__(self, top, right, bottom, left, height, width, offsetTop, offsetRight, offsetBottom, offsetLeft, step):
         self.lights = (top, right, bottom, left)
