@@ -1,6 +1,8 @@
 # Ambilight for Mac OS
 
-This part of software watches your screen and creates packets for Arduino UNO.
+This part of software is a part for your Mac. It works only with Arduino UNO. See [Amilight Arduino part](https://github.com/sergeich5/Ambilight-Arduino-part)
+
+# Instruction
   - [Setup your Arduino UNO before use.](https://github.com/sergeich5/Ambilight-Arduino-part)
   - Connect Arduino UNO to yout Mac
   - Run ambilight via python 2.7
