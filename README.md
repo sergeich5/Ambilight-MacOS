@@ -6,8 +6,13 @@ This part of software is a part for your Mac. It works only with Arduino UNO. Se
 
 # Instruction
   - [Setup your Arduino UNO before use.](https://github.com/sergeich5/Ambilight-Arduino-part)
-  - Connect Arduino UNO to yout Mac
+  - Connect Arduino UNO to your Mac
   - Run ambilight via python 2.7
+```sh
+$ python -v
+Python 2.7.16 (default, Jul  5 2020, 02:24:03)
+```
+
 ```sh
 $ python /path/to/ambilight.py
 ```
