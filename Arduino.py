@@ -15,7 +15,7 @@ class Arduino(object):
         self.connection = None
         try:
             data = self.get_ports()
-            print data
+            # print data
             self.port = data[0]
             self.connection = serial.Serial(self.port, 115200)
             print self.connection.name
@@ -28,7 +28,7 @@ class Arduino(object):
 
         result = []
         for port in ports:
-            if 'tty.wchusbserial14' in port:
+            if 'tty.usbmodem' in port:
                 try:
                     s = serial.Serial(port)
                     s.close()
@@ -37,5 +37,7 @@ class Arduino(object):
                     pass
         return result
     def sendPacket(self, packet):
-        self.connect()
-        self.connection.write(packet)
+        if self.connection is None:
+            self.connect()
+        if self.connection is not None:
+            self.connection.write(packet)
